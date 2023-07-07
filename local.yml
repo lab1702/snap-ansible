@@ -21,6 +21,7 @@
   - name: install snaps
     snap:
       name:
+        - core
         - steam
         - bitwarden
         - discord
