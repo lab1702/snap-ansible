@@ -1,9 +1,34 @@
-# snap-ansible
+---
+- hosts: localhost
+  connection: local
+  become: true
 
-## Add Snaps to Ubuntu or Debian Workstation
+  tasks:
+  - name: update packages
+    apt:
+      name: "*"
+      state: latest
+      update_cache: true
 
-### Ansible Commands
+  - name: autoremove
+    apt:
+      autoremove: yes
 
-Run this to apply the config to your workstation after making sure snapd is working:
+  - name: autoclean
+    apt:
+      autoclean: yes
 
-    sudo ansible-pull -U https://github.com/lab1702/snap-ansible.git
+  - name: install snaps
+    snap:
+      name:
+        - steam
+        - bitwarden
+        - discord
+        - telegram-desktop
+        - zoom-client
+
+  - name: install classic snaps
+    snap:
+      classic: yes
+      name:
+        - code
