@@ -1,0 +1,34 @@
+---
+- hosts: localhost
+  connection: local
+  become: true
+
+  tasks:
+  - name: update packages
+    apt:
+      name: "*"
+      state: latest
+      update_cache: true
+
+  - name: autoremove
+    apt:
+      autoremove: yes
+
+  - name: autoclean
+    apt:
+      autoclean: yes
+
+  - name: install snaps
+    snap:
+      name:
+        - steam
+        - bitwarden
+        - discord
+        - telegram-desktop
+        - zoom-client
+
+  - name: install classic snaps
+    snap:
+      classic: yes
+      name:
+        - code
