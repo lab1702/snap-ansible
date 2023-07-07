@@ -1,2 +1,9 @@
 # snap-ansible
-Separate ansible config to install snaps on Ubuntu and Debian.
+
+## Add Snaps to Ubuntu or Debian Workstation
+
+### Ansible Commands
+
+Run this to apply the config to your workstation after making sure snapd is working:
+
+    sudo ansible-pull -U https://github.com/lab1702/snap-ansible.git
