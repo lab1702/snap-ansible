@@ -1,6 +1,6 @@
 # snap-ansible
 
-## Add Snaps to Ubuntu or Debian Workstation
+## Add Snaps to Debian or Ubuntu Workstation
 
 ### Debian prerequisites
 
