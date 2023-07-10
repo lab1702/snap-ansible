@@ -10,11 +10,11 @@
       state: latest
       update_cache: true
 
-  - name: autoremove
+  - name: autoremove packages
     apt:
       autoremove: yes
 
-  - name: autoclean
+  - name: autoclean packages
     apt:
       autoclean: yes
 
