@@ -20,7 +20,8 @@
 
   - name: install core snap
     snap:
-      - core
+      name:
+        - core
     when: ansible_facts['distribution'] == 'Debian'
 
   - name: install standard snaps
