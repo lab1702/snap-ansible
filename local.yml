@@ -18,10 +18,14 @@
     apt:
       autoclean: yes
 
-  - name: install snaps
+  - name: install core snap
+    snap:
+      - core
+    when: ansible_facts['distribution'] == 'Debian'
+
+  - name: install standard snaps
     snap:
       name:
-        - core
         - steam
         - bitwarden
         - discord
