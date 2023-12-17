@@ -38,4 +38,5 @@
       classic: yes
       name:
         - code
+        - nvim
         - helix
