@@ -37,6 +37,7 @@
     snap:
       classic: yes
       name:
+        - julia
         - code
         - nvim
         - helix
