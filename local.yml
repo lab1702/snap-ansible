@@ -37,6 +37,7 @@
     snap:
       classic: yes
       name:
+        - powershell
         - julia
         - code
         - nvim
