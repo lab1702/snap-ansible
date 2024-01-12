@@ -14,14 +14,8 @@ Run this to apply the config to your workstation after making sure snapd is work
 
 ## Install Go packages for editor support
 
-Run this to install language server:
+Run this to install language server etc.:
 
     go install golang.org/x/tools/gopls@latest
-
-Run this to install debugger:
-
     go install github.com/go-delve/delve/cmd/dlv@latest
-
-Run this to install staticcheck:
-
     go install honnef.co/go/tools/cmd/staticcheck@latest
