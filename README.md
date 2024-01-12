@@ -17,5 +17,7 @@ Run this to apply the config to your workstation after making sure snapd is work
 Run this to install language server, debugger and linter:
 
     go install golang.org/x/tools/gopls@latest
+
     go install github.com/go-delve/delve/cmd/dlv@latest
+
     go install honnef.co/go/tools/cmd/staticcheck@latest
