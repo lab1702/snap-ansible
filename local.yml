@@ -38,6 +38,7 @@
       classic: yes
       name:
         - go
+        - gopls
         - powershell
         - julia
         - code
