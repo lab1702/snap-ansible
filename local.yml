@@ -32,6 +32,7 @@
         - discord
         - telegram-desktop
         - zoom-client
+        - slides
 
   - name: install classic snaps
     snap:
