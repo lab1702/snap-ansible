@@ -33,6 +33,7 @@
         - telegram-desktop
         - zoom-client
         - slides
+        - fx
 
   - name: install classic snaps
     snap:
