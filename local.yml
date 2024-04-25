@@ -28,7 +28,6 @@
     snap:
       name:
         - steam
-        - bitwarden
         - discord
         - telegram-desktop
         - zoom-client
